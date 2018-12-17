@@ -2,7 +2,22 @@
 
 Custom Instrumentation for ratpack 1.4.6. This package instruments the `ratpack.path.internal.PathHandler` invocations as Web transactions.
 
-This instrumentation is purposely lightweight and is a replacements for incubator version of the ratpack instrumentation which provides more instrumenation but also suffers from performance issues because of it.
+This instrumentation is purposely lightweight and has instrumentation only to create web transactions.
+
+## (Optional) Build
+
+`bash
+	./gradlew clean build
+`
+The jar file is built in 'build/libs' folder
+
+## (Optional) Import project into eclipse  
+
+`bash
+	./gradlew eclipse
+`
+Then choose "File > Import > General > Existing Projects into workspace"
+and enter the location of this folder to complete the import.
 
 ## Installation / Usage
 
@@ -14,7 +29,7 @@ This instrumentation is purposely lightweight and is a replacements for incubato
 
 ## Results
 
-The instrumentation will report ratpack pathhandler calls as transaction. By default, it limits the URL path segments to a maximum of four. For example "/custom/v2/hubs/orders/87776" will be reported under "custom/v2/hubs/orders"
+The instrumentation will report ratpack pathhandler calls as transaction. To create meaningful transaction names, certain substitutions are made as defined in [here](https://github.com/preddy-newrelic/ratpack-1.4.6-1.0/blob/master/src/main/java/com/newrelic/ratpack/path/internal/PathHandler_Instrument.java)
 
 
 ## Troubleshooting
