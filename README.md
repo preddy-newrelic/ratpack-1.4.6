@@ -29,7 +29,7 @@ and enter the location of this folder to complete the import.
 
 ## Results
 
-The instrumentation will report ratpack pathhandler calls as transaction. To create meaningful transaction names, certain substitutions are made as defined in [here](https://github.com/preddy-newrelic/ratpack-1.4.6-1.0/blob/master/src/main/java/com/newrelic/ratpack/path/internal/PathHandler_Instrument.java)
+The instrumentation will report ratpack pathhandler calls as transaction. To create meaningful transaction names, certain substitutions are made as defined in [here](https://github.com/preddy-newrelic/ratpack-1.4.6/blob/3499bdead8d37a876c18d2ab36ed252f29651d1a/src/main/java/com/newrelic/ratpack/path/internal/PathHandler_Instrument.java#L31)
 
 
 ## Troubleshooting
