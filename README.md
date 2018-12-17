@@ -6,16 +6,17 @@ This instrumentation is purposely lightweight and has instrumentation only to cr
 
 ## (Optional) Build
 
-`bash
+```bash
 	./gradlew clean build
-`
+```
 The jar file is built in 'build/libs' folder
 
 ## (Optional) Import project into eclipse  
 
-`bash
+```bash
 	./gradlew eclipse
-`
+```
+
 Then choose "File > Import > General > Existing Projects into workspace"
 and enter the location of this folder to complete the import.
 
